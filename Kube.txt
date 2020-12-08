@@ -1,0 +1,25 @@
+Optima Deployment documentation:
+
+For spring services we defined secrets
+ ->secrets in k8s template should be encoded with base 64
+ ->ENV in values if its an array use toYaml to fetch them to Deployment.Yaml
+ ->in env values should be in quotes""
+ -> How to do encoding: echo "mega_secret_key" | base64
+ -> Use -n to avoid a new line in 
+ echo -n "mongodb+srv://user:optima@cluster0.vn8jw.mongodb.net/Optima?retryWrites=true&w=majority" | base64
+ ->Decoding echo "<encoded key>" | base64 -d
+ ->kubectl exec --stdin --tty shell-demo -- /bin/bash (Enter into a container from k8s)
+ ->PV is independent of ns but PVC iss dependent on NS
+
+ buoyant-algebra-276307
+
+ certified kuberenetes in udemy by mumshad
+
+ helm repo ls
+
+ persistent volume is namespace and pvc is specific to namespace
+
+ kubectl get events
+ ->For new namespace, the docker logins secret should be added in ICP 
+
+ 

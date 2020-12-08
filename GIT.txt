@@ -1,0 +1,11 @@
+Git Docs:
+
+How to delete a branch ->
+git push origin -d <branchname>
+git pull -> Pulls all the latest changes in all branches and also
+            pulls new branches if any  
+git pull --rebase --squash upstream master (What is this for?)   
+
+git clone --single-branch --branch <branchname> <remote-repo>
+
+git clone --single-branch --branch vh-pages https://github.com/Optima-soltuions/helm-charts.git | grep

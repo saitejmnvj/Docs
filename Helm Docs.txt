@@ -1,0 +1,10 @@
+Helm Documentation:
+
+Helm Release is the instance of the Helm chart Installed<
+THere can be two different release names of the same chart, 
+it will be installed as two different versions of the same name:
+Release.Name is the same
+
+=>helm upgrade command checks the previous release and changes only the things which are changes,
+it doesn't chnage everything, unline helm install
+=> helm install <releasename>/<Chart which is to be installed>

@@ -1,0 +1,4 @@
+Jenkins docs
+
+-> gitlabBuilds builds:[] -> Means when there is any merge req, the stages mentioned in the array[], 
+   will be exected. 

@@ -1,0 +1,22 @@
+Terraform docs:
+
+Terraform : infra as code: 1)Manage infra on any platform using the same workflow
+                           2)State Management: The config file in terraform is checked against the config on infra and the file changes are apllied onto terraform
+
+Terraform flow: 
+terraform init: downloads all the plugins that are needed for the project(run this in the project directory)
+terraform plan: to verify creation process
+terraform apply: to apply the config 
+
+terraform configuration:
+Its is divided into several blocks:
+1)Terraform blocks(terraform{}): this part tells the terraform which providers modules should it download(Example: aws or gcp etc)
+2)Provider block(provider{}): THis is responsible for creating and providing the resources
+3)Resources block(resources{<tkaes two arguments: 1)resource type and 2)resource name)>}) : defines a piece of infra
+
+some useful commands:
+terraform fmt - to format the configuration files,
+terraform validate - checks if the syntax is correct or not
+
+terraformtf.state: file used for state management- creation, destruction, modification of the resources can all be done with the help of this file
+

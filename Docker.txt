@@ -1,0 +1,11 @@
+Docker Docs
+
+docker login <regisry name>
+it will prompt for username and password
+
+docker pull image name
+docker build -t filname . <imagename> build args#Review this command
+Having .docker_ignore is a good practice, so that we dont push unnecessary files with Image,
+which will add upto the image size which is a big no-no
+
+
