@@ -10,6 +10,7 @@ For spring services we defined secrets
  ->Decoding echo "<encoded key>" | base64 -d
  ->kubectl exec --stdin --tty shell-demo -- /bin/bash (Enter into a container from k8s)
  ->PV is independent of ns but PVC iss dependent on NS
+ -> -f flag used for follow in scripts, ex: kubectl logs -f <podname>
 
  buoyant-algebra-276307
 
@@ -20,6 +21,10 @@ For spring services we defined secrets
  persistent volume is namespace and pvc is specific to namespace
 
  kubectl get events
+
+ debugging in kuberentes:
+ 
  ->For new namespace, the docker logins secret should be added in ICP 
 
  
+

@@ -9,3 +9,8 @@ git pull --rebase --squash upstream master (What is this for?)
 git clone --single-branch --branch <branchname> <remote-repo>
 
 git clone --single-branch --branch vh-pages https://github.com/Optima-soltuions/helm-charts.git | grep
+
+In order to allow Jenkins to pull the code from a private git Repo: these are the steps:
+   ->Go to Gitrepo, go to Setting and select Deploy Keys Option
+   -> Here Add the ssh generated public key
+   -> And go to Jenkins Credentials and Add the Private Key of SSH there  
